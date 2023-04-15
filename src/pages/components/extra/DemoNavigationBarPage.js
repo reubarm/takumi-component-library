@@ -71,7 +71,7 @@ export default function DemoNavigationBarPage() {
               sx={{
                 py: 5,
                 borderRadius: 2,
-                bgcolor: 'background.paper',
+                bgcolor: '#233044',
                 boxShadow: (theme) => theme.customShadows.z24,
               }}
             />
