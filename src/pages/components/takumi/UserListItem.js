@@ -63,8 +63,8 @@ export default function UserListItem() {
             <Stack>
               <Typography
                 variant="body1"
-                sx={{ fontSize: '18px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
-                gutterBottom
+                sx={{ mb: 0.5, fontSize: '18px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
+
               >
                 John Appleseed
                 <Avatar
@@ -92,18 +92,17 @@ export default function UserListItem() {
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
-                gutterBottom
+                sx={{ mb: 0.5, fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
               >
-                <Iconify icon="mdi:instagram" width={24} sx={{ mr: 0.5, flexShrink: 0 }} />
+                <Iconify icon="mdi:instagram" width={18} sx={{ mr: 0.5, flexShrink: 0 }} />
                 @johnny
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
+                sx={{ mb: 0.5, fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
                 gutterBottom
               >
-                <Iconify icon="ion:logo-tiktok" width={24} sx={{ mr: 0.5, flexShrink: 0 }} />
+                <Iconify icon="ion:logo-tiktok" width={18} sx={{ mr: 0.5, flexShrink: 0 }} />
                 @appleseed123
               </Typography>
               <Typography
