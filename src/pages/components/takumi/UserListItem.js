@@ -66,7 +66,7 @@ export default function UserListItem() {
                 sx={{ fontSize: '18px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
                 gutterBottom
               >
-                Johnny Appleseed
+                John Appleseed
                 <Avatar
                   alt="Remy Sharp"
                   src="/assets/icons/flags/ic_flag_us.svg"
@@ -96,7 +96,7 @@ export default function UserListItem() {
                 gutterBottom
               >
                 <Iconify icon="mdi:instagram" width={24} sx={{ mr: 0.5, flexShrink: 0 }} />
-                577,565,695
+                @johnny
               </Typography>
               <Typography
                 variant="body2"
@@ -104,7 +104,7 @@ export default function UserListItem() {
                 gutterBottom
               >
                 <Iconify icon="ion:logo-tiktok" width={24} sx={{ mr: 0.5, flexShrink: 0 }} />
-                123,456,789
+                @appleseed123
               </Typography>
               <Typography
                 variant="body2"
