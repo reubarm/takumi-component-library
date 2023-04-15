@@ -31,6 +31,7 @@ const navConfig = [
         children: [
           { title: 'Follower Data', path: '/takumi/followers' },
           { title: 'Finance Buttons', path: '/takumi/finance-buttons' },
+          { title: 'User List Item', path: '/takumi/user-item' },
         ],
       },
     ],

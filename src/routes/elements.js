@@ -34,6 +34,10 @@ export const FinanceApprovalButtons = Loadable(
   lazy(() => import('../pages/components/takumi/FinanceApprovalButtons'))
 );
 
+export const UserListItem = Loadable(
+  lazy(() => import('../pages/components/takumi/UserListItem'))
+);
+
   // FOUNDATION
 export const FoundationColorsPage = Loadable(
   lazy(() => import('../pages/components/foundation/FoundationColorsPage'))

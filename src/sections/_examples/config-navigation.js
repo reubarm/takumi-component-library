@@ -4,7 +4,7 @@ import { paramCase, snakeCase } from 'change-case';
 
 const getHref = (category, name) => `/${category}/${paramCase(name)}`;
 
-export const takumi = ['Followers', 'Finance Buttons'].map((name) => ({
+export const takumi = ['Followers', 'Finance Buttons', 'User Item'].map((name) => ({
   name,
   href: getHref('takumi', name),
   icon: `/assets/icons/components/ic_${snakeCase(name)}.png`,

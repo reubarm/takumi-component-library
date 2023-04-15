@@ -12,6 +12,7 @@ import {
   ComponentsOverviewPage,
   Followers,
   FinanceApprovalButtons,
+  UserListItem,
   //
   FoundationColorsPage,
   FoundationTypographyPage,
@@ -87,6 +88,7 @@ export default function Router() {
               children: [
                 { path: 'followers', element: <Followers /> },
                 { path: 'finance-buttons', element: <FinanceApprovalButtons /> },
+                { path: 'user-item', element: <UserListItem /> },
               ],
             },
             {
