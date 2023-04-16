@@ -8,7 +8,7 @@ export default create({
 
   brandTitle: 'Takumi',
   brandUrl: '/',
-  brandImage: '/logo-final.svg',
+  brandImage: 'https://takumi-component-library.vercel.app/logo-final.svg',
   brandTarget: '_self',
 
   //
@@ -17,12 +17,12 @@ export default create({
 
   // UI
   appBg: '#233044',
-  appContentBg: '#ffffff',
+  appContentBg: '#000000',
   appBorderColor: '#585C6D',
   appBorderRadius: 4,
 
   // Text colors
-  textColor: '#fff',
+  textColor: '#ffffff',
   textInverseColor: '#ffffff',
 
   // Toolbar default and active colors
@@ -32,7 +32,7 @@ export default create({
 
   // Form colors
   inputBg: '#ffffff',
-  inputBorder: '#10162F',
-  inputTextColor: '#10162F',
+  inputBorder: '#ffffff',
+  inputTextColor: '#000000',
   inputBorderRadius: 2,
 });

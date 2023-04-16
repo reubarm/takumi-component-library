@@ -1,10 +1,7 @@
-import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-// @mui
 import { Box, Container, Stack, Avatar, Typography } from '@mui/material';
 import { Block } from '../../../sections/_examples/Block';
 import Iconify from '../../../components/iconify';
-// routes
 import { PATH_PAGE } from '../../../routes/paths';
 import CustomBreadcrumbs from '../../../components/custom-breadcrumbs';
 
@@ -18,17 +15,14 @@ const style = {
   '& > *': { m: '8px !important' },
 };
 
+const photo = '/img/john.jpeg';
+const fullname = 'John Appleseed';
+const engagement = '3.9%';
+const instagram = '@johnny';
+const tiktok = '@appleseed123';
+const email = '12b3314e-c734-4a34-9696-a4be9ed3c9b5@development.takumi.com';
+
 export default function UserListItem() {
-  const [click, setCLick] = useState(null);
-
-  const handleClick = (event) => {
-    setCLick(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setCLick(null);
-  };
-
   return (
     <>
       <Helmet>
@@ -39,7 +33,6 @@ export default function UserListItem() {
         sx={{
           pt: 6,
           pb: 1,
-          bgcolor: (theme) => (theme.palette.mode === 'light' ? 'grey.200' : 'grey.800'),
         }}
       >
         <Container>
@@ -59,14 +52,19 @@ export default function UserListItem() {
       <Container sx={{ my: 10 }}>
         <Stack spacing={3}>
           <Block title="Influencer List Item" sx={style}>
-            <Avatar alt="Remy Sharp" src="/img/john.jpeg" sx={{ width: 72, height: 72 }} />
+            <Avatar alt="Avatar" src={photo} sx={{ width: 72, height: 72 }} />
             <Stack>
               <Typography
                 variant="body1"
-                sx={{ mb: 0.5, fontSize: '18px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
-
+                sx={{
+                  mb: 0.5,
+                  fontSize: '18px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  fontWeight: 700,
+                }}
               >
-                John Appleseed
+                {fullname}
                 <Avatar
                   alt="Remy Sharp"
                   src="/assets/icons/flags/ic_flag_us.svg"
@@ -82,7 +80,7 @@ export default function UserListItem() {
                     ml: 2,
                   }}
                 >
-                  3.7%
+                  {engagement}
                   <Iconify
                     icon="material-symbols:show-chart"
                     width={18}
@@ -92,28 +90,39 @@ export default function UserListItem() {
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ mb: 0.5, fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
+                sx={{
+                  mb: 0.5,
+                  fontSize: '14px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  fontWeight: 700,
+                }}
               >
                 <Iconify icon="mdi:instagram" width={18} sx={{ mr: 0.5, flexShrink: 0 }} />
-                @johnny
+                {instagram}
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ mb: 0.5, fontSize: '14px', display: 'flex', alignItems: 'center', fontWeight: 700 }}
+                sx={{
+                  mb: 0.5,
+                  fontSize: '14px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  fontWeight: 700,
+                }}
                 gutterBottom
               >
                 <Iconify icon="ion:logo-tiktok" width={18} sx={{ mr: 0.5, flexShrink: 0 }} />
-                @appleseed123
+                {tiktok}
               </Typography>
               <Typography
                 variant="body2"
                 sx={{ fontSize: '11px', display: 'flex', alignItems: 'center', fontWeight: 400 }}
                 gutterBottom
               >
-                12b3314e-c734-4a34-9696-a4be9ed3c9b5@development.takumi.com
+                {email}
               </Typography>
             </Stack>
-            {/* <Avatar alt="Remy Sharp" src="/img/messi.png" sx={{ width: 96, height: 96 }} /> */}
           </Block>
         </Stack>
       </Container>

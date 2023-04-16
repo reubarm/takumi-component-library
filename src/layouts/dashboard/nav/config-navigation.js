@@ -129,7 +129,7 @@ const navConfig = [
     items: [
       {
         title: 'Storybook',
-        path: 'http://localhost:6006/?path=/docs/example-introduction--docs',
+        path: 'https://643c3f8f9a82ce8fc32ca47d-xkewirnsfr.chromatic.com/?path=/docs/example-userlistitem--docs',
         icon: ICONS.external,
       },
     ],
